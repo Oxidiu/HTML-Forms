@@ -22,11 +22,11 @@
       <label for="password">Password</label>
       <input type="password" name="password">
       <label for="name">Name and Lastname</label>
-      <input type="text" name="name" placeholder="ex: Ovidiu">
+      <input type="text" name="name" placeholder="ex: Ovidiu Radu">
       <label for="birth">Date of birth</label>
       <input type="date" name="birth">
       <label for="tel">Telephone number</label>
-      <input type="tel" name="tel">
+      <input type="tel" name="tel" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" placeholder="xxxx xxx xxx">
       <label for="plans">Choose a plan:</label>
       <select name="plans" id="plans">
         <option value="freePlan" value="freePlan">Free plan</option>
@@ -40,14 +40,14 @@
       <label for="proPlan">Pro Plan</label>
       <input type="checkbox" name="proPlan">
       <label for="card">Credit card number</label>
-      <input type="number" name="card">
+      <input id="card" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
       <label for="CVC">CVC</label>
-      <input type="number" name="CVC">
+      <input type="text" name="CVC" pattern="[0-9]+"> <!--I used this because on a site said it is unacceptable the number type for this field because it removes the 0 from the beginning of a number, some CVC  start with 0-->
       <label for="expirationDate">Expiration Date</label>
-      <input type="date" name="expirationDate">
-      <label for="billingAddress">Billing Address</label>
+      <input type="month" name="expirationDate">
       <label for="billingAddress">Write your billing address:</label>
-      <textarea name="billingAddress" id="billingAddress">
+      <textarea name="billingAddress" id="billingAddress" placeholder="ex: str Resita nr 97 ap 3">
+      <input type="submit" name="" id="">
     </form>
   </body>
 </html>
