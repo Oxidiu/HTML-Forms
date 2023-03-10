@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">E-mail</label>
+      <input type="email" name="email">
+      <label for="password">Password</label>
+      <input type="password" name="password">
+      <label for="name">Name and Lastname</label>
+      <input type="text" name="name" placeholder="ex: Ovidiu">
+      <label for="birth">Date of birth</label>
+      <input type="date" name="birth">
+      <label for="tel">Telephone number</label>
+      <input type="tel" name="tel">
+      <label for="plans">Choose a plan:</label>
+      <select name="plans" id="plans">
+        <option value="freePlan" value="freePlan">Free plan</option>
+        <optgroup label="advancedPlans">
+          <option value="bronse">Bronse - 20$</option>
+          <option value="silver">Silver - 50$</option>
+          <option value="gold">Gold - 70$</option>
+        </optgroup>
+      </select>
+      <br>
+      <label for="proPlan">Pro Plan</label>
+      <input type="checkbox" name="proPlan">
+      <label for="card">Credit card number</label>
+      <input type="number" name="card">
+      <label for="CVC">CVC</label>
+      <input type="number" name="CVC">
+      <label for="expirationDate">Expiration Date</label>
+      <input type="date" name="expirationDate">
+      <label for="billingAddress">Billing Address</label>
+      <label for="billingAddress">Write your billing address:</label>
+      <textarea name="billingAddress" id="billingAddress">
+    </form>
+  </body>
+</html>
